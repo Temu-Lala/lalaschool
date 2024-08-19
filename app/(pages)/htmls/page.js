@@ -5,48 +5,10 @@ import Navbar from "@/app/components/navbar";
 import Sidebar from "@/app/components/sidebar";
 import Image from "next/image";
 import Images from "../../../public/htmlsphoto/image.png";
-import dynamic from "next/dynamic";
 import { FaHandPointer } from "react-icons/fa";
-
-const Editor = dynamic(() => import("@monaco-editor/react"), { ssr: false });
-
+import Codeeditor from './htmleditor'
 function Page() {
-  const [htmlContent, setHtmlContent] = useState(`
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>This is a paragraph about us.</p>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p>Feel free to reach out to us.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Website</p>
-    </footer>
-</body>
-</html>
-  `);
-
-  const [iframeSrc, setIframeSrc] = useState("");
-
-  const handleRunCode = () => {
-    const blob = new Blob([htmlContent], { type: "text/html" });
-    const url = URL.createObjectURL(blob);
-    setIframeSrc(url);
-  };
+ 
 
   return (
     <div className="flex xl:flex-row flex-col ">
@@ -140,29 +102,8 @@ function Page() {
           </ol>
         </div>
       </div>
-      <div className="flex-1  bg-white">
-        <div>
-          <Editor
-            height="60vh"
-            language="html"
-            value={htmlContent}
-            onChange={(value) => setHtmlContent(value || "")}
-            theme="vs-dark"
-          />
-          <button
-            onClick={handleRunCode}
-            className="mt-4 p-2 bg-blue-500 text-white rounded"
-          >
-            Run Code
-          </button>
-          <iframe
-            src={iframeSrc}
-            style={{ width: "100%", height: "100vh", border: "none" }}
-            title="Output"
-          ></iframe>
-        </div>
-      </div>
-    
+   
+   
    
     </div>
   );

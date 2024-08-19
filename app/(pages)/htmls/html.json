@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "title": "HTML Elements",
+      "description": "APIs Many web APIs use JSON to format the data they send and receive. Web Development JSON is commonly used in AJAX requests to exchange data with a web server. Configuration Files: Many applications use JSON to store configuration settings. Data Storage: JSON can be used as a lightweight alternative to XML for data interchange between systems. Let me know if you need more details on a specific use case."
+    },
+    {
+      "id": 2,
+      "title": "Introduction to JSON",
+      "description": "JSON stands for JavaScript Object Notation. It is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate. It is often used to transmit data between a server and web application as text."
+    },
+    {
+      "id": 3,
+      "title": "Working with JSON in JavaScript",
+      "description": "JavaScript provides built-in methods for working with JSON, such as `JSON.parse()` for converting JSON strings into JavaScript objects and `JSON.stringify()` for converting JavaScript objects into JSON strings."
+    },
+    
+    {"id":4,
+  "title":"HTML Elements",
+  "description": "JavaScript provides built-in methods for working with JSON, such as `JSON.parse()`  for converting JSON strings into JavaScript objects and `JSON.stringify()` for converting JavaScript objects into JSON strings."
+},
+{"id":5,
+"title":"HTML Elements ",
+"description": "{https://www.facebook.com} JavaScript provides built-in methods for working with JSON, such as `JSON.parse()` for converting JSON strings into JavaScript objects and `JSON.stringify()` for converting JavaScript objects into JSON strings."
+}
+
+  ]
+  

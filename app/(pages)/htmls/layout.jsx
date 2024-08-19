@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Footer from "@/app/components/footer";
 import Navbar from "@/app/components/navbar";
 import Sidebar from "@/app/components/sidebar";
-
+import Codeeditor from './htmleditor'
 const Layout = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
@@ -24,8 +24,11 @@ const Layout = ({ children }) => {
           <Navbar />
         </nav>
         {/* Main content */}
-        <main className="flex-grow p-4 overflow-y-auto">
-          {children}
+        <main className=" p-4 flex flex-col xl:flex-row overflow-y-auto">
+          <div className="flex-1"> {children}</div>
+          <div className="flex-1">   <Codeeditor/></div>
+         
+       
         </main>
         {/* Footer */}
         <footer className="bg-gray-200 ">

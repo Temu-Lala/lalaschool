@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center w-full h-16 px-4 text-white bg-black transition-all duration-300">
+    <div className="flex justify-between items-center w-full h-16 px-4 z-50 text-white bg-black transition-all duration-300">
       <div>
         <h1 className="text-3xl font-signature ml-2">
           <a href="#" className="link-underline">
@@ -43,7 +43,7 @@ const Navbar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="relative px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200"
+            className="relative px-4 z-50 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200"
           >
             {link === "courses" ? (
               <div
@@ -54,7 +54,7 @@ const Navbar = () => {
                   Courses <FaChevronDown className="ml-1" />
                 </span>
                 {dropdownOpen && (
-                  <ul className="absolute top-full left-0 mt-2  min-w-[200px]   bg-white text-black rounded-lg shadow-lg z-10 max-h-[50vh] overflow-auto">
+                  <ul className="absolute top-full left-0 mt-2   min-w-[200px]   bg-white text-black rounded-lg shadow-lg z-50 max-h-[50vh] overflow-auto">
                     {courses.map(({ id, name }) => (
                       <li
                         key={id}
@@ -76,12 +76,12 @@ const Navbar = () => {
       </ul>
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+        className="cursor-pointer pr-4 z-50 text-gray-500 md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+        <ul className="flex z-50 flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
           {links.map(({ id, link }) => (
             <li
               key={id}
@@ -98,7 +98,7 @@ const Navbar = () => {
                 <>
                   Courses
                   {dropdownOpen && (
-                    <ul className="absolute top-full left-0 mt-2 w-[50vw] min-w-[200px] bg-white text-black rounded-lg shadow-lg z-10 max-h-[50vh] overflow-auto">
+                    <ul className="absolute top-full left-0 mt-2 w-[50vw] min-w-[200px] bg-white text-black rounded-lg shadow-lg z-50 max-h-[50vh] overflow-auto">
                       {courses.map(({ id, name }) => (
                         <li
                           key={id}
