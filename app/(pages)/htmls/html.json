@@ -1,28 +1,227 @@
 [
-    {
-      "id": 1,
-      "title": "HTML Elements",
-      "description": "APIs Many web APIs use JSON to format the data they send and receive. Web Development JSON is commonly used in AJAX requests to exchange data with a web server. Configuration Files: Many applications use JSON to store configuration settings. Data Storage: JSON can be used as a lightweight alternative to XML for data interchange between systems. Let me know if you need more details on a specific use case."
-    },
-    {
-      "id": 2,
-      "title": "Introduction to JSON",
-      "description": "JSON stands for JavaScript Object Notation. It is a lightweight data interchange format that is easy for humans to read and write and easy for machines to parse and generate. It is often used to transmit data between a server and web application as text."
-    },
-    {
-      "id": 3,
-      "title": "Working with JSON in JavaScript",
-      "description": "JavaScript provides built-in methods for working with JSON, such as `JSON.parse()` for converting JSON strings into JavaScript objects and `JSON.stringify()` for converting JavaScript objects into JSON strings."
-    },
-    
-    {"id":4,
-  "title":"HTML Elements",
-  "description": "JavaScript provides built-in methods for working with JSON, such as `JSON.parse()`  for converting JSON strings into JavaScript objects and `JSON.stringify()` for converting JavaScript objects into JSON strings."
-},
-{"id":5,
-"title":"HTML Elements ",
-"description": "{https://www.facebook.com} JavaScript provides built-in methods for working with JSON, such as `JSON.parse()` for converting JSON strings into JavaScript objects and `JSON.stringify()` for converting JavaScript objects into JSON strings."
-}
+  {
+    "id": 1,
+    "title": "HTML Elements",
+    "description": [
+      " ➡️**<div>** -  ቅርፀ ለመመስረት ተጠቃሚውን እንዲሁም ውስጥ ያሉ እቃዎችን ለመከፋፈል የሚያግዝ የአቀማመጥ ክፍል ነው።",
+      " ➡️**<p>** -የጽሁፍ ክፍል ያካተተ  ሲሆን በዋናነት ጽሁፍ  ክፍል የሚሠራ ነው።",
+      " ➡️**<h1>, <h2>, <h3>** - ርዕሶች: በድምር የጽሁፍ ርዕሶችን ማሳያ ክፍሎች ናቸው። ",
+      ". ➡️**<a>** -  አድራሻ: አቀማመጡን ወደ ሌላ ገፅ ወይም አንድ ውስጣዊ ገፅ የሚያገናኝ  አድራሻ ነው።",
+      "➡️ **<ul>, <ol>, <li>** - ይተለያዩ ዝርዝሮችን  የምናሳይበት ክፍል ነው   ቅደም ተከተል  ያለው <ol> ቅደም ተከተል  ይሌለው <ul> ነገር ግን በውስጣቸው  <li> ማካተት አለባቸው  ",
+      "➡️**<img>** - ምስል: የምስል ክፍል ሲሆን ምስልን ለማስቀመጥ የሚያገለግል ነው ።",
+      "➡️**<input>** - ከተጠቃሚ ግብአቶችን የምንቀበልበት  ፊልድ ነው ።",
+      "➡️**<form>** - ሞዴል: ድርጊቶቻችንን የምንቆጣጠርበት  መንገድ ነው",
+      "➡️**<button>**",
+      "➡️**<table>, <tr>, <td>, <th>** - ሰንጠረዥ",
 
-  ]
-  
+      "🔗 For more elements check this "
+    ],
+    "code": "<h1>My First Heading</h1>",
+    "title1": "paragraph",
+
+    "code1": "<h1>My First Heading</h1>",
+    "title2": "Tagname",
+    "code2": "<tagname>Content goes here...</tagname>",
+
+    "title3": "Input filed ",
+    "code3": "<input type='text' placeholder='lala school'/>",
+    "title4": "paragraph with a line break",
+    "code4": "<p>This is a <br> paragraph with a line break.</p>",
+    "image": "https://www.ionos.co.uk/digitalguide/fileadmin/_processed_/0/d/csm_html-tagst_9c34285cd8.webp",
+    "content": "https://www.geeksforgeeks.org/html-tags-a-to-z-list",
+    "templet": "https://www.wikitechy.com/html/img/html-subscribe-form/html-subscribe-form.png"
+  },
+  {
+    "id": 2,
+    "title": "HTML Attributes",
+    "description": [
+      "➡️🟢id🔴: መለያ 1ድን ኤለመንት  መለያ ስም በመስጠት  ለመለየት ይጠቅማል  Example: <div id='header'>Header Content</div>",
+      " ➡️🟢class🔴:መለያ ስም በመስጠት  ለመለየት የሚጠቅም ሲሆን ነገር ግን በዙ ኤለመንቶችን በ 1ድ ክላስ ማካተት ይችላል.Example: <p class='highlight'> paragraph.1</p> <div class='highlight' paragraph.2</div>",
+      "➡️🟢style🔴: የተለያዩ ሰታይሎችነ  ለማካተት ይጠቅማል.Example: <p style='color: blue;''>This text is blue.</p>",
+      "➡️🟢src🔴:: ከ ሶርሳቸው ምስሎችን ለማግኘት የጠቅመናል .  <img> <script> and <iframe>.Example: <img src='image.jpg' alt='Sample Image'>",
+      "➡️🟢href🔴:ሪፈረንስ  የምንነካው ነገር ወዴት  አንደሚውሰደን የመንወስንበት ነው  Example: <a href='https://www.example.com'>Visit Example</a>'",
+      "➡️🟢alt🔴: አማራጭ  አንድን ምስል የማናገኘው ከሆነ ቴክስታችን እንዲታይ የረዳናል የረዳናል  የምንጠቀመው <img> ውስጥ ከ src='' በመቀጠል ነው .Example: <img src='logo.png' alt='Company Logo'>",
+      "➡️🟢name🔴: የፎረም ኤለመንቶችን ስም በመስጠት  እና በስማቸው አክሰስ ለማድረግ የጠቅመናል Example: <input type='text' name='username'>",
+      "➡️🟢value 🔴: ቴክስት ባንሰጠው እንኩአን በውስጡ ያልውን value  ወደ ፎርም ለመላክ እንጠቀመዋለን  የያዘውን ውጤት/ ያልውን ውጤት  ወደ ፎርም ለመላክ እንጠቀመዋለን Example: <input type='text' value='Default Text'>",
+      "➡️🟢required 🔴: Value ሳንሰጥ ወደ ፎርም መላክ እንዳንችል ይረዳናል / ባዶ ፊልድ እነዳይላክ  ይቆጣጠርልናል.Example: <input type='text' required>",
+      "➡️🟢placeholder 🔴: አጭር ማብራሪያ እንድናስገባ ይረዳናል .Example: <input type='text' placeholder='Enter your name'>"
+    ],
+   
+    "code": "<a href='https://temesgen-lala.vercel.app/>'",
+   "title1": "The src Attribute with out width",
+
+    "code1": "<img src='https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'>",
+    "title2": "The width and height Attributes",
+    "code2": "<img src='https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width='500' height='600'>",
+
+    "title3": "The alt Attribute",
+    "code3": "<img src='img_girl.jpg' alt='Girl with a jacket'>",
+    "title4": "The style Attribute",
+    "code4": "<p style='color:red;''>This is a red paragraph.</p>",
+    "image": "https://techforestng.com/wp-content/uploads/2022/05/HTML-Attributes.jpg",
+    "content": "https://data-flair.training/blogs/wp-content/uploads/sites/2/2020/06/HTML-Attributes.jpg",
+    "templet": "https://www.tutorialbrain.com/wp-content/uploads/2019/01/HTML-attribute-1024x576.jpg"
+  },
+  {
+    "id": 3,
+    "title": "HTML Headings",
+    "description": [
+      "HTML ርዕሶች ምንድን ናቸው? የኤችቲኤምኤል አርዕስቶች በድረ-ገጽ ላይ ርዕሶችን ለመፍጠር የሚያገለግሉ መለያዎች ናቸው። ከ<h1> እስከ <h6> ይደርሳሉ, <h1> በጣም አስፈላጊው (ብዙውን ጊዜ ዋናው ርዕስ) እና <h6> በጣም አስፈላጊ ነው.",
+      "  <h1>Main Heading</h1>",
+      " <h2>Subheading Level 1</h2>",
+      "  <h3>Subheading Level 2</h3>",
+      "<h4>Subheading Level 3</h4>",
+      "<h5>Subheading Level 4</h5>",
+      " <h6>Subheading Level 5</h6>"
+    ],
+    "code": "<h1>Heading 1</h1>",
+    "title1": "Heading 2",
+
+    "code1": "<h2>Heading 2</h2>",
+    "title2": "Heading 3",
+    "code2": "<h3>Heading 3</h3>",
+
+    "title3": "Heading 4",
+    "code3": "<h4>Heading 4</h4>",
+    "title4": "Heading 5",
+    "code4": "<h5>Heading 5</h5>",
+    "image": "https://lh3.googleusercontent.com/hyT4BzTB7QQestRMIJGjDg1S90h-jCpTtQXWs9zbj8cPmZ8gj_WMLH33q7UPzFeoVefz3xEPqVhfgI9H4xbQEp-j8hxR-lRzoIZvSO4ydNUhhilBvqDz6tFDHOQypXnetieZ7yKt61BHK9V2xjivnqKf6cCU26dWXKyspdVO0jgcgyeTBZGnKJ1OQQ1huw",
+    "content": "https://www.w3schools.com/tags/tag_header.asp",
+    "templet": "https://www.techmagnate.com/files/2023/11/HTML-header-tags.png"
+  },
+  {
+    "id": 4,
+    "title": "HTML Styles  Attribute",
+    "description": [
+      "እነዚህን መሰረታዊ የHTML Styles ውጤታማ በሆነ መንገድ በመጠቀም በደንብ የተነደፉ እና ለእይታ ማራኪ የሆኑ ድረ-ገጾችን መፍጠር ይችላሉ።example: <p style='color:blue;      background-color: linen;'>"
+    ],
+    "code": "<tagname style='property:value;'>",
+    "title1": " Replace the Body tag ",
+
+    "code1": "<body style='background-color:powderblue;'>",
+    "title2": "",
+    "code2": "<h1 style='background-color:powderblue;'>This is a heading</h1>",
+
+    "title3": "Background Color",
+    "code3": "<p style='background-color:tomato;''>This is a paragraph.</p>",
+    "title4": "Text Color",
+    "code4": "<h1 style='color:blue;'>This is a heading</h1>",
+    "image": "https://cdn.educba.com/academy/wp-content/uploads/2020/01/HTML-Inline-Style.jpg",
+    "content": "https://www.w3schools.com/html/html_css.asp",
+    "templet": "https://d2uusema5elisf.cloudfront.net/courses/30-days-of-webdev/day-10/public/assets/internal.gif"
+  },
+  {
+    "id": 5,
+    "title": "HTML Formatting Elements",
+    "description": [
+      "የኤችቲኤምኤል ቅርጸት አካላት በድረ-ገጽ ውስጥ የጽሑፍ አቀራረብን እና ገጽታን ለመቆጣጠር ያገለግላሉ። ከገለፃዎች ጋር በብዛት ጥቅም ላይ የዋሉ የቅርጸት አካላት ዝርዝር ይኸውና፡",
+      "#### 1. **`<b>`** - **bold ጽሑፍ** - ** መግለጫ: *** ምንም አስፈላጊነት ሳይጠቁም ጽሑፍን በደማቅ ቅርጸ/ ክብደት ያቀርባል።- **ለምሳሌ፥**``<p>this is  <b>bold</b>  text።</p>``",
+      "#### 2. **`<strong>`** - **ጠንካራ ጽሑፍ**- **መግለጫ፡** ጽሁፉን በደማቅ መልክ ያቀርባል፣ ይህም ጽሑፉ ጠንካራ ጠቀሜታ ወይም አጽንዖት እንዳለው ያሳያል።- **ለምሳሌ፥**``<p>this is <strong>strong</strong> text።</p>``",
+      "#### 3. **`<i>`** - ** ሰያፍ ጽሁፍ**- ** መግለጫ: *** ምንም ልዩ አጽንዖት ሳይሰጥ ጽሑፍን ሰያፍ በሆነ ቅርጸ ያቀርባል።- **ለምሳሌ፥**``<p> this is <i>Italic </i> text</p>``",
+      "#### 4. **`<em>`** - **አጽንዖት የተሰጠው ጽሑፍ**- **መግለጫ፡** ጽሑፍን በሰያፍ ፊደላት ያቀርባል፣ ይህም ጽሑፉ አጽንዖት ወይም ጠቀሜታ እንዳለው ያሳያል።- **ለምሳሌ፥**``<p>this is  <em> italic + bold </em> text</p>``",
+      "#### 5. **`<u>`** - **ከስር የተሰመረ ጽሑፍ**- ** መግለጫ፡** ጽሑፍን ከስር መስመር ጋር ያቀርባል።- **ለምሳሌ፥**``<p>this is  <u>underline</u>text</p>``",
+      "#### 8. **`<del>`** - **የተሰረዘ ጽሑፍ**- **መግለጫ፡** የተሰረዘ ወይም የተሰረዘ መሆኑን የሚያመለክተውን ጽሑፍ በመስመሩ በኩል ያቀርባል።- **ለምሳሌ፥**``<p>this is  <del>deleted </del> text</p>``",
+      "<b> - Bold text",
+      "<strong> - Important text",
+      "<i> - Italic text",
+      "<em> - Emphasized text",
+      "<mark> - Marked text",
+      "<small> - Smaller text",
+      "<del> - Deleted text",
+      "<ins> - Inserted text",
+      "<sub> - Subscript text",
+      "<sup> - Superscript text"
+    ],
+    "code": "<b>This text is bold</b>",
+    "title1": "HTML <b> and <strong> Elements",
+
+    "code1": "<strong>This text is important!</strong>",
+    "title2": "HTML <i> and <em> Elements",
+    "code2": "<i>This text is italic</i>",
+
+    "title3": "",
+    "code3": "<em>This text is emphasized</em>",
+    "title4": "HTML <small> Element",
+    "code4": "<small>This is some smaller text.</small>",
+    "image": "https://i.pinimg.com/736x/bc/94/61/bc94614d5b6dfae6b348def456fe4142.jpg",
+    "content": "https://www.w3schools.com/html/html_formatting.asp",
+    "templet": "https://www.web4college.com/html/socialImages/html-text-formatting.png"
+  },
+
+  {
+    "id": 6,
+    "title": "HTML Comments",
+    "description": [
+      "HTML Comments: መግለጫ  Web  የማይታዩ ማስታወሻዎችን(note ) ወይም ማብራሪያዎችን በኤችቲኤምኤል ኮድ ውስጥ ለማስገባት ያገለግላሉ። እነዚህ አስተያየቶች ገንቢዎች አስታዋሾችን እንዲተዉ፣ ኮድ እንዲያብራሩ  ጠቃሚ ሊሆኑ ይችላሉ።"
+    ],
+    "title1": " ሁሉም ነገር በ --› እና‹-- መካከል ውስጥ መሆን አለበት",
+
+    "code1": "<!-- <p>This is another paragraph </p> -->",
+    "title2": "Hide Inline Content",
+    "code2": "<!--<p>Look at this cool image:</p><img border='0' src='pic_trulli.jpg' alt='Trulli'>-->",
+
+    "title3": "",
+    "code3": "<p>This <!-- great text --> is a paragraph.</p>",
+    "title4": "",
+    "code4": "<h1>My First Heading</h1><p>My first paragraph.</p>",
+    "code": "<!-- This is a comment -->",
+    "image": "https://www.copahost.com/blog/wp-content/uploads/2019/07/html-comments.jpg",
+    "content": "",
+    "templet": "https://www.webcodzing.com/wp-content/uploads/2022/11/single-line-comments-example.webp"
+  },
+  {
+    "id": 7,
+    "title": "HTML Colors",
+    "description": [
+      "የኤችቲኤምኤል ቀለሞች በድረ-ገጽ ላይ ያለውን የጽሑፍ፣ የጀርባ፣ የድንበሮች እና ሌሎች አካላትን ቀለም ለመወሰን ያገለግላሉ። እነዚህ ቀለሞች በኤችቲኤምኤል እና በሲኤስኤስ ውስጥ የተለያዩ ዘዴዎችን በመጠቀም የተገለጹ ናቸው, ይህም ለእይታ ማራኪ ድረ-ገጾችን ለመንደፍ ቀላል ያደርገዋል.",
+      "1. ** የተሰየሙ ቀለሞች ***- ** መግለጫ ***: HTML እና CSS አስቀድሞ የተገለጹ የቀለም ስሞችን ዝርዝር ይደግፋሉ። እነዚህ ቀለሞች በሰዎች ሊነበቡ በሚችሉ እንደ 'ቀይ'፣ 'ሰማያዊ' እና 'አረንጓዴ' ባሉ ቃላት ተሰይመዋል።- **ምሳሌ**፡ `ቀለም፡ ቀይ፤` ወይም `የጀርባ ቀለም፡ ፈዛዛ ሰማያዊ፤`",
+      "- ** መግለጫ ***፡ ሄክሳዴሲማል የቀለም ኮዶች ቀለማትን ለመለየት ባለ ስድስት አሃዝ ፊደሎች እና ቁጥሮች ጥምረት ይጠቀማሉ። ቅርጸቱ `#RRGGBB` ሲሆን `RR`፣ `GG` እና `BB` ቀይ፣ አረንጓዴ እና ሰማያዊ ቀለም ክፍሎችን የሚወክሉበት ነው።- ** ምሳሌ ***: `ቀለም: #ff0000;` (ቀይ), `የጀርባ-ቀለም: #00ff00;` (አረንጓዴ)",
+      "** RGB ቀለሞች ***- ** መግለጫ ***: RGB ቀለሞች የሚገለጹት በ `rgb()` ተግባር ሲሆን ይህም ቀይ፣ አረንጓዴ እና ሰማያዊ ክፍሎችን ከ0 እስከ 255 ባለው ክልል ውስጥ የሚወክሉ ሶስት መለኪያዎችን ይወስዳል።- ** ምሳሌ**፡ `ቀለም፡ rgb(255፣ 0፣ 0);` (ቀይ)፣ `ዳራ-ቀለም፡ rgb(0፣ 255፣ 0));` (አረንጓዴ)"
+    ],
+    "image": "https://careerkarma.com/blog/wp-content/uploads/2019/06/html-code-for-color-text.png",
+    "title01": "Background Color",
+    "code": "<h1 style='background-color:DodgerBlue;'>Hello World</h1>",
+    "title1": "Text Color",
+
+    "code1": "<h1 style='color:Tomato;'>Hello World</h1>",
+    "title2": "Border Color",
+    "code2": "<h1 style='border:2px solid Tomato;'>Hello World</h1>",
+
+    "title3": "Color Values",
+    "code3": "<h1 style='background-color:rgb(255, 99, 71);'>...</h1>",
+    "title4": "Color Values",
+    "code4": "<h1 style='background-color:#ff6347;'>...</h1>",
+    "content": "",
+    "templet": ""
+  },
+  {
+    "id": 8,
+    "title": "HTML Styles - CSS",
+    "description": [
+      "CSS ገንቢዎች እንደ ቀለሞች፣ ቅርጸ-ቁምፊዎች፣ ክፍተቶች እና የአቀማመጥ ንድፎች ያሉ ቅጦችን እንዲተገብሩ በማድረግ የድረ-ገጾችን አቀራረብ ያሻሽላል። ይዘትን ከንድፍ ይለያል፣ ንፁህ እና የበለጠ የሚተዳደር የኮድ መዋቅርን ያስችላል።",
+      "Inline CSS/የመስመር ውስጥ CSS",
+      "Internal Css/ውስጣዊ CSS",
+      "External Css /ውጫዊ CSS",
+      "Embedded CSS/የተካተተ CSS",
+      "➡️Inline CSS/የመስመር ውስጥ CSS  የ CSS  ባህሪን በመጠቀም በቀጥታ በኤችቲኤምኤል/HTML አባል ውስጥ መጠቀም ለፈጣን እና ለአንድ ጊዜ የቅጥ አሰራር ይጠቅማል ",
+      "➡️Internal Css/ውስጣዊ CSS  በኤችቲኤምኤል/HTML ሰነድ ክፍል ውስጥ በ<style> መለያ ውስጥ መጠቀም  ነጠላ ገጽን/page ለመቅረጽ ይጠቅማል።",
+      "➡️External Css /ውጫዊ CSS  በተለየ ፋይል ከ.css  ጋር ተጽፎ ከኤችቲኤምኤል/HTML ሰነድ ጋር የተገናኘ የ<link> መለያ። ይህ በብዙ ገፆች ላይ ወጥ የሆነ ዘይቤን ለመጠበቅ በጣም የተለመደው እና የሚመከር አካሄድ ነው።",
+      "➡️Embedded CSS/የተከተተ CSS  ከውስጥ Css ጋር ተመሳሳይ ነው ነገር ግን የ<style> መለያን በመጠቀም በተወሰነ የገጹ<div></div> ክፍል ውስጥ CSSን ሊያመለክት ይችላል። የተወሰኑ የገጽ ክፍሎችን ለመቅረጽ ይጠቅማል።"
+    ],
+    "title01":"",
+    "image": "https://training-blog-uploads.internshala.com/blog/wp-content/uploads/2023/09/Types-of-css-in-html-1.jpg.webp",
+    "title1": "Inline CSS",
+
+    "code1": "<h1 style='color:blue;'>A Blue Heading</h1>",
+    "title2": "Internal CSS",
+    "code2": "<style>body {background-color: powderblue;}h1   {color: blue;}p    {color: red;}</style>",
+
+    "title3": "External CSS",
+    "code3": " <link rel='stylesheet' href='styles.css'>",
+    "title4": "CSS Colors, Fonts and Sizes",
+    "code4": "body { background-color: powderblue;}h1 { color: blue;}p {  color: red;}",
+    "code": "<style>h1 {  color: blue;  font-family: verdana;  font-size: 300%;}p {  color: red;  font-family: courier;  font-size: 160%;}</style>",
+    "content": "",
+    "templet": "https://miro.medium.com/v2/resize:fit:1400/1*FUtSmeRbiNcTEz9f3xu1MQ.png"
+  }
+]
